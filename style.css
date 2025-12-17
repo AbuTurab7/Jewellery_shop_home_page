@@ -1,0 +1,1014 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fffcfa;
+}
+
+/* Header Section  */
+
+/* Section 1 */
+
+header .section1 {
+  background-color: #214b48;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+}
+header .section1 .heading-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+header .section1 .icon-container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 20px;
+}
+
+/* Section 2 */
+
+header .section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 40px;
+}
+
+/* Search Container */
+header .section2 .search-container {
+  position: relative;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .section2 .search-container input {
+  padding: 15px 120px 15px 15px;
+  border-radius: 30px;
+  border: 1px solid rgba(128, 128, 128, 0.321);
+  font-size: 15px;
+
+  &::placeholder {
+    color: rgb(77, 76, 76);
+  }
+}
+header .section2 .search-container img {
+  position: absolute;
+  top: 25%;
+  left: 58%;
+}
+
+/* Heading Container */
+header .section2 .heading-container {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .section2 .heading-container .heading p {
+  font-family: "jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #403e3e;
+}
+
+/* Icon Container */
+header .section2 .icon-container {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+/* Section 3 */
+header .section3 {
+  background-color: #f0dcd1;
+  color: #403e3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 7px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* Body */
+
+/* Hero Section */
+
+.hero-section {
+  height: 85vh;
+  display: flex;
+}
+.hero-section .hero-left {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/Necklace_img.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 50px;
+}
+.hero-section .hero-left .hero-left-details {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-section .hero-left .hero-left-details #primary-text,
+.hero-second-section p {
+  font-size: 50px;
+}
+.hero-section .hero-left .hero-left-details #secondary-text {
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero-section .hero-left .hero-left-details .explore-btn,
+.hero-second-section button {
+  width: 40%;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 19px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-section .hero-right {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/Bracelet_img.png");
+}
+
+/* Feature Section */
+
+.features-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px;
+}
+
+/* Bestseller Section */
+
+.bestseller-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+/* Bestseller Heading */
+.bestseller-section .heading p {
+  font-size: 50px;
+}
+
+/* Bestseller Filters */
+.bestseller-section .filters {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+.bestseller-section .filters .filter {
+  border: 2px solid rgba(128, 128, 128, 0.666);
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bestseller-section .filters .active {
+  color: white;
+  background-color: #214b48;
+}
+
+/* Bestseller Cards */
+.bestseller-section .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.bestseller-section .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bestseller-section .card p {
+  font-size: 19px;
+  color: #413f3f;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.bestseller-section .card #price {
+  font-size: 19px;
+  color: #000000;
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: 500;
+}
+.bestseller-section .card #price span {
+  font-size: 18px;
+  color: #808080;
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.bestseller-section .card .color-filter {
+  display: flex;
+  gap: 5px;
+}
+
+.bestseller-section .card .color-filter .color {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bestseller-section .card .color-filter .color .color1-inside {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: #e8d48e;
+}
+
+.bestseller-section .card .color-filter .color .color2-inside {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: #c8c8c8;
+}
+
+.bestseller-section .card .color-filter .active {
+  border: 2px solid gray;
+}
+
+.bestseller-section .cards .second {
+  margin-top: 35px;
+}
+
+/* Bestseller Button */
+.bestseller-section .bestseller-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bestseller-section .bestseller-btn-container #bestseller-btn {
+  background-color: #214b48;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Recently Viewed Section */
+
+.recently-viewed-section,
+.gift-section,
+.reviews-section {
+  background-color: #efdbcf;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.recently-viewed-section .heading p,
+.special-section .heading p,
+.our-collection .heading p,
+.gift-section .heading .primary-heading,
+.reviews-section .header .primary-heading {
+  font-size: 50px;
+  font-weight: 700;
+}
+.recently-viewed-section .cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.recently-viewed-section .cards .card {
+  width: 19%;
+}
+.recently-viewed-section .cards .card img {
+  width: 100%;
+}
+
+.recently-viewed-section .card p {
+  font-size: 18px;
+  color: #413f3f;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.recently-viewed-section .card #price {
+  font-size: 18px;
+  color: #000000;
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: 500;
+}
+.recently-viewed-section .card #price span {
+  font-size: 16px;
+  color: #808080;
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+/* Special-Section */
+
+.special-section {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.special-section .heading p,
+.our-collection .heading p,
+.gift-section .heading .primary-heading,
+.gift-section .heading .secondary-heading,
+.reviews-section .header .primary-heading,
+.reviews-section .header .secondary-heading {
+  text-align: center;
+}
+.special-section .body {
+  display: flex;
+  justify-content: space-between;
+}
+.special-section .body .special-left {
+  width: 49.5%;
+  background-image: url("images/Chain_img.png");
+}
+.special-section .body .special-right {
+  width: 49.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.special-section .body .special-right .right-cards {
+  width: 100%;
+  display: flex;
+}
+.special-section .body .special-right .right-cards .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.special-section .body .special-right .right-cards .card img {
+  width: 90%;
+}
+.special-section .body .special-right .right-cards .card button {
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #214b48;
+  font-weight: 550;
+  font-family: "Google Sans Flex", sans-serif;
+  border: 2px solid #214b48;
+  background-color: transparent;
+}
+
+/* Second Hero Section */
+
+.hero-second-section {
+  display: flex;
+  gap: 5px;
+}
+.hero-second-section .left,
+.hero-second-section .right {
+  height: 80vh;
+  width: 100%;
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.hero-second-section .left {
+  background-image: url("images/Multiple_Chains_img.png");
+}
+.hero-second-section .right {
+  background-image: url("images/Earrings_img.png");
+}
+
+.hero-second-section .left button {
+  border: none;
+  background-color: #484848;
+  color: white;
+}
+.hero-second-section .right button {
+  font-weight: 500;
+}
+
+/* Our-Collection Section */
+
+.our-collection {
+  padding: 120px 0 60px 0;
+}
+.our-collection .cards {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.our-collection .cards .card {
+  width: 13.5%;
+}
+.our-collection .cards .card img {
+  width: 100%;
+}
+.our-collection .cards .card p {
+  text-align: center;
+  color: #1f1f1f;
+  font-size: 25px;
+  font-weight: 550;
+  font-family: "Google Sans Flex", sans-serif;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+/* Gift Section */
+
+.gift-section .heading .secondary-heading,
+.reviews-section .header .secondary-heading {
+  font-size: 18px;
+  color: #464343;
+  font-family: "Google Sans Flex", sans-serif;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.gift-section .cards,
+.reviews-section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.gift-section .cards .card {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gift-section .cards .card img {
+  height: 480px;
+}
+.gift-section .cards .card #primary {
+  font-size: 25px;
+  color: #000000;
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: 600;
+}
+.gift-section .cards .card #secondary {
+  font-size: 15px;
+  color: #161413;
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: 500;
+}
+#gift-btn {
+  background-color: #214b48;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  padding: 14px;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+.gift-section .gift-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Description Section */
+.description-section {
+  display: flex;
+}
+.description-section .left {
+  height: 85vh;
+  width: 50%;
+  background-image: url("images/Description_img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.description-section .right {
+  width: 50%;
+  padding: 110px 120px 100px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.description-section .right #title {
+  color: #413f3f;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+}
+.description-section .right .heading {
+  color: #000000;
+  font-size: 50px;
+  font-weight: 550;
+  font-style: normal;
+}
+.description-section .right #desc {
+  color: #413f3f;
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+}
+#desc-btn {
+   background-color: #214b48;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  padding: 14px;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+/* Trend Section */
+
+.trend-section{
+  height: 80vh;
+  background: #FEF9F6;
+background: radial-gradient(circle, rgba(254, 249, 246, 1) 0%,rgba(243, 229, 219, 255) 63%,rgba(239, 220, 208, 1) 100%);
+  display: flex;
+}
+.trend-section .left{
+  width: 50%;
+  background-image: url("images/Diamond_img.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 95%;
+}
+.trend-section .right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 60px 160px 150px 30px;
+}
+.trend-section .right .header #heading{
+  color: #000000;
+  font-size: 48px;
+  font-weight: 550;
+  font-style: normal;
+}
+.trend-section .right .header #desc , .trend-section .right .icon p{
+   color: #413f3f;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+}
+.trend-section .right .icons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  width: 100%;
+}
+.trend-section .right .icon{
+  margin-top: 10px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.trend-section .right .icon img{
+  height: 80px;
+}
+.trend-section .right .icon p{
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Review Section */
+
+.reviews-section{
+  background-color: #fffbf9;
+}
+
+.reviews-section .cards .card{
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reviews-section .cards .card .ratings{
+  display: flex;
+  gap: 2px;
+}
+.reviews-section .cards .card .ratings img{
+  width: 20px;
+  height: 20px;
+}
+.reviews-section .cards .card .review-text{
+  font-size: 25px;
+  color: #000000;
+  font-weight: 550;
+}
+.reviews-section .cards .card .desc{
+  font-size: 15px;
+  color: #3b3b3b;
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: 500;
+  line-height: 25px;
+}
+.reviews-section .cards .card .name{
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 550;
+}
+.reviews-section .review-btn-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Loading-Img-Section */
+
+.loading-img-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.loading-img-section .cards{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 60%;
+}
+.loading-img-section .card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+.loading-img-section .card .img-container{
+  display: flex;
+    align-items: center;
+  justify-content: center;
+}
+.loading-img-section .card .img-container .image{
+  height: 110px;
+  width: 110px;
+  border: 3px solid #214b48;
+  border-radius: 50%;
+}
+.loading-img-section .card .desc{
+  font-size: 22px;
+  color: #3b3b3b;
+  font-family: "Google Sans Flex", sans-serif;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+/* Footer */
+
+.main-container{
+  height: 70vh;
+  background-color: #214b48;
+  padding: 65px;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+.main-container .upper-container{
+  display: flex;
+}
+.main-container .upper-container .left-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+  margin-bottom: 50px;
+}
+.main-container .upper-container .left-container #primary ,
+.main-container .upper-container .left-container #secondary { 
+ font-size: 19px;
+ margin-top: 30px;
+  font-family: "Google Sans Flex", sans-serif;
+  line-height: 25px;
+}
+.main-container .upper-container .right-container{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .upper-container .right-container .container p{
+ font-size: 25px;
+  font-family: "Google Sans Flex", sans-serif;
+  margin-bottom: 25px;
+}
+.main-container .upper-container .right-container .container ul li{
+  list-style: none;
+ font-size: 18px;
+  font-family: "Google Sans Flex", sans-serif;
+  margin-top: 15px;
+}
+.main-container .lower-container{
+  background-color: #22726b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+.main-container .lower-container #copyright{
+  border: 2px solid white;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Responsive CSS */
+/* Tablet */
+@media (max-width: 1024px) {
+
+  header .section2 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  header .section2 .search-container,
+  header .section2 .heading-container,
+  header .section2 .icon-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header .section2 .search-container img {
+    left: 85%;
+  }
+
+  .hero-section {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .hero-section .hero-left,
+  .hero-section .hero-right {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .bestseller-section .filters {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .bestseller-section .cards {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .bestseller-section .card {
+    width: 48%;
+  }
+
+  .recently-viewed-section .cards .card {
+    width: 30%;
+  }
+
+  .special-section .body {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .special-section .body .special-left,
+  .special-section .body .special-right {
+    width: 100%;
+  }
+
+  .hero-second-section {
+    flex-direction: column;
+  }
+
+  .hero-second-section .left,
+  .hero-second-section .right {
+    height: 60vh;
+  }
+
+  .our-collection .cards .card {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+
+  .gift-section .cards .card {
+    width: 48%;
+  }
+
+  .description-section {
+    flex-direction: column;
+  }
+
+  .description-section .left,
+  .description-section .right {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .trend-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .trend-section .left,
+  .trend-section .right {
+    width: 100%;
+  }
+
+  .reviews-section .cards .card {
+    width: 48%;
+  }
+
+  .main-container {
+    height: auto;
+  }
+
+  .main-container .upper-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .main-container .upper-container .left-container,
+  .main-container .upper-container .right-container {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  header .section1 {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  header .section1 .heading-container,
+  header .section1 .icon-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header .section3 {
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .hero-section .hero-left {
+    padding: 30px;
+  }
+
+  .hero-section .hero-left .hero-left-details #primary-text {
+    font-size: 36px;
+  }
+
+  .hero-section .hero-left .hero-left-details .explore-btn,
+  .hero-second-section button {
+    width: 100%;
+  }
+
+  .features-section {
+    flex-wrap: wrap;
+    font-size: 18px;
+  }
+
+  .bestseller-section {
+    padding: 30px 20px;
+  }
+
+  .bestseller-section .heading p {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .bestseller-section .card {
+    width: 100%;
+  }
+
+  .recently-viewed-section .cards .card {
+    width: 48%;
+  }
+
+  .special-section .body .special-right .right-cards .card button {
+    padding: 8px 10px;
+  font-size: 12px;
+  }
+
+  .our-collection .cards .card {
+    width: 45%;
+  }
+
+  .gift-section .cards .card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .description-section .right .heading {
+    font-size: 36px;
+  }
+
+  .trend-section .right {
+    padding: 40px 20px;
+  }
+
+  .trend-section .right .icons .icon {
+    width: 48%;
+  }
+
+  .reviews-section .cards .card {
+    width: 100%;
+  }
+
+  .loading-img-section .cards {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-container {
+    padding: 40px 20px;
+  }
+
+  .main-container .upper-container .right-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .main-container .lower-container {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
