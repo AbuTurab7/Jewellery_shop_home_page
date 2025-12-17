@@ -1,10 +1,22 @@
+:root {
+  --primary-color: #214b48;
+  --secondary-color: #f0dcd1;
+  --accent-color: #efdbcf;
+  --text-dark: #403e3e;
+  --text-muted: #808080;
+  --bg-light: #fffcfa;
+  --font-main: "Inter", sans-serif;
+  --font-display: "Google Sans Flex", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-color: #fffcfa;
+  background-color: var(--bg-light);
 }
 
 /* Header Section  */
@@ -12,7 +24,7 @@ body {
 /* Section 1 */
 
 header .section1 {
-  background-color: #214b48;
+  background-color: var(--primary-color);
   color: white;
   display: flex;
   align-items: center;
@@ -24,7 +36,7 @@ header .section1 .heading-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -83,7 +95,7 @@ header .section2 .heading-container .heading p {
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
-  color: #403e3e;
+  color: var(--text-dark);
 }
 
 /* Icon Container */
@@ -97,14 +109,14 @@ header .section2 .icon-container {
 
 /* Section 3 */
 header .section3 {
-  background-color: #f0dcd1;
-  color: #403e3e;
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   padding: 7px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -141,7 +153,7 @@ header .section3 {
 }
 .hero-section .hero-left .hero-left-details #secondary-text {
   font-size: 17px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 400;
   font-style: normal;
 }
@@ -152,12 +164,13 @@ header .section3 {
   color: black;
   border: none;
   font-size: 19px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 400;
   font-style: normal;
   padding: 15px;
   display: flex;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 .hero-section .hero-right {
@@ -176,7 +189,7 @@ header .section3 {
   justify-content: center;
   gap: 20px;
   font-size: 22px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 500;
   font-style: normal;
   padding: 10px;
@@ -208,13 +221,13 @@ header .section3 {
   border-radius: 20px;
   padding: 8px 20px;
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 400;
   font-style: normal;
 }
 .bestseller-section .filters .active {
   color: white;
-  background-color: #214b48;
+  background-color: var(--primary-color);
 }
 
 /* Bestseller Cards */
@@ -230,19 +243,19 @@ header .section3 {
 .bestseller-section .card p {
   font-size: 19px;
   color: #413f3f;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 500;
 }
 .bestseller-section .card #price {
   font-size: 19px;
   color: #000000;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   font-weight: 500;
 }
 .bestseller-section .card #price span {
   font-size: 18px;
-  color: #808080;
-  font-family: "Google Sans Flex", sans-serif;
+  color: var(--text-muted);
+  font-family: var(--font-display);
   font-weight: 500;
   text-decoration: line-through;
 }
@@ -291,16 +304,17 @@ header .section3 {
 }
 
 .bestseller-section .bestseller-btn-container #bestseller-btn {
-  background-color: #214b48;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 450;
   font-style: normal;
   padding: 15px;
   display: flex;
   gap: 15px;
+  cursor: pointer;
 }
 
 /* Recently Viewed Section */
@@ -308,7 +322,7 @@ header .section3 {
 .recently-viewed-section,
 .gift-section,
 .reviews-section {
-  background-color: #efdbcf;
+  background-color: var(--accent-color);
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -337,19 +351,19 @@ header .section3 {
 .recently-viewed-section .card p {
   font-size: 18px;
   color: #413f3f;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 500;
 }
 .recently-viewed-section .card #price {
   font-size: 18px;
   color: #000000;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   font-weight: 500;
 }
 .recently-viewed-section .card #price span {
   font-size: 16px;
-  color: #808080;
-  font-family: "Google Sans Flex", sans-serif;
+  color: var(--text-muted);
+  font-family: var(--font-display);
   font-weight: 500;
   text-decoration: line-through;
 }
@@ -401,11 +415,12 @@ header .section3 {
 .special-section .body .special-right .right-cards .card button {
   padding: 12px 20px;
   font-size: 18px;
-  color: #214b48;
+  color: var(--primary-color);
   font-weight: 550;
-  font-family: "Google Sans Flex", sans-serif;
-  border: 2px solid #214b48;
+  font-family: var(--font-display);
+  border: 2px solid var(--primary-color);
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* Second Hero Section */
@@ -439,9 +454,11 @@ header .section3 {
   border: none;
   background-color: #484848;
   color: white;
+  cursor: pointer;
 }
 .hero-second-section .right button {
   font-weight: 500;
+  cursor: pointer;
 }
 
 /* Our-Collection Section */
@@ -466,7 +483,7 @@ header .section3 {
   color: #1f1f1f;
   font-size: 25px;
   font-weight: 550;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   text-decoration: underline;
   margin-top: 10px;
 }
@@ -477,7 +494,7 @@ header .section3 {
 .reviews-section .header .secondary-heading {
   font-size: 18px;
   color: #464343;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   margin-top: 10px;
   font-weight: 500;
 }
@@ -500,21 +517,21 @@ header .section3 {
 .gift-section .cards .card #primary {
   font-size: 25px;
   color: #000000;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   font-weight: 600;
 }
 .gift-section .cards .card #secondary {
   font-size: 15px;
   color: #161413;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   font-weight: 500;
 }
 #gift-btn {
-  background-color: #214b48;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 450;
   font-style: normal;
   padding: 14px;
@@ -550,7 +567,7 @@ header .section3 {
 .description-section .right #title {
   color: #413f3f;
   font-size: 18px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 450;
   font-style: normal;
 }
@@ -563,16 +580,16 @@ header .section3 {
 .description-section .right #desc {
   color: #413f3f;
   font-size: 25px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 450;
   font-style: normal;
 }
 #desc-btn {
-   background-color: #214b48;
+   background-color: var(--primary-color);
   color: white;
   border: none;
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 450;
   font-style: normal;
   padding: 14px;
@@ -612,7 +629,7 @@ background: radial-gradient(circle, rgba(254, 249, 246, 1) 0%,rgba(243, 229, 219
 .trend-section .right .header #desc , .trend-section .right .icon p{
    color: #413f3f;
   font-size: 18px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-main);
   font-weight: 450;
   font-style: normal;
 }
@@ -666,14 +683,14 @@ background: radial-gradient(circle, rgba(254, 249, 246, 1) 0%,rgba(243, 229, 219
 .reviews-section .cards .card .desc{
   font-size: 15px;
   color: #3b3b3b;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   font-weight: 500;
   line-height: 25px;
 }
 .reviews-section .cards .card .name{
   display: flex;
   justify-content: flex-end;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   font-size: 18px;
   color: #000000;
   font-weight: 550;
@@ -715,13 +732,13 @@ background: radial-gradient(circle, rgba(254, 249, 246, 1) 0%,rgba(243, 229, 219
 .loading-img-section .card .img-container .image{
   height: 110px;
   width: 110px;
-  border: 3px solid #214b48;
+  border: 3px solid var(--primary-color);
   border-radius: 50%;
 }
 .loading-img-section .card .desc{
   font-size: 22px;
   color: #3b3b3b;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   font-weight: 500;
   line-height: 25px;
 }
@@ -730,7 +747,7 @@ background: radial-gradient(circle, rgba(254, 249, 246, 1) 0%,rgba(243, 229, 219
 
 .main-container{
   height: 70vh;
-  background-color: #214b48;
+  background-color: var(--primary-color);
   padding: 65px;
   display: flex;
   flex-direction: column;
@@ -750,7 +767,7 @@ background: radial-gradient(circle, rgba(254, 249, 246, 1) 0%,rgba(243, 229, 219
 .main-container .upper-container .left-container #secondary { 
  font-size: 19px;
  margin-top: 30px;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   line-height: 25px;
 }
 .main-container .upper-container .right-container{
@@ -760,13 +777,13 @@ background: radial-gradient(circle, rgba(254, 249, 246, 1) 0%,rgba(243, 229, 219
 }
 .main-container .upper-container .right-container .container p{
  font-size: 25px;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   margin-bottom: 25px;
 }
 .main-container .upper-container .right-container .container ul li{
   list-style: none;
  font-size: 18px;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   margin-top: 15px;
 }
 .main-container .lower-container{
@@ -775,7 +792,7 @@ background: radial-gradient(circle, rgba(254, 249, 246, 1) 0%,rgba(243, 229, 219
   align-items: center;
   justify-content: center;
   gap: 7px;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-display);
   font-size: 20px;
   padding: 10px;
 }
